@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ranga.inclass03.MainActivity">
+
+    <TextView
+        android:text="@string/select_paswrd_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="@string/pswrd_count_val"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:id="@+id/passwrdCntThrdID"
+        android:layout_width="40dp"
+        android:layout_alignLeft="@+id/pswrdLgthThrdTxtID"
+        android:layout_alignStart="@+id/pswrdLgthThrdTxtID"
+        android:layout_alignRight="@+id/pswrdLgthThrdTxtID"
+        android:layout_alignEnd="@+id/pswrdLgthThrdTxtID" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="13dp"
+        android:id="@+id/seekBarPCThrd"
+        android:layout_alignRight="@+id/passwrdCntThrdID"
+        android:layout_alignEnd="@+id/passwrdCntThrdID"
+        android:max="9"/>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="22dp"
+        android:id="@+id/seekBarPLThrd"
+        android:layout_alignRight="@+id/pswrdLgthThrdTxtID"
+        android:layout_alignEnd="@+id/pswrdLgthThrdTxtID"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:max="16"/>
+
+    <TextView
+        android:text="@string/pswrdCntAsyncTxtVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/pswrdLgthThrdTxtID"
+        android:layout_alignStart="@+id/pswrdLgthThrdTxtID"
+        android:id="@+id/pswrdCntAsyID" />
+
+    <TextView
+        android:text="@string/select_paswrd_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/seekBarPLThrd"
+        android:layout_alignLeft="@+id/seekBarPLThrd"
+        android:layout_alignStart="@+id/seekBarPLThrd"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:text="@string/select_pswrd_len"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarPCAs"
+        android:layout_alignLeft="@+id/seekBarPCAs"
+        android:layout_alignStart="@+id/seekBarPCAs"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:text="@string/pswrdLgthAsyncTxtVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignRight="@+id/seekBarPCAs"
+        android:layout_alignEnd="@+id/seekBarPCAs"
+        android:id="@+id/pswrdLgthAsyID" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="19dp"
+        android:id="@+id/seekBarPLAs"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_alignRight="@+id/pswrdLgthAsyID"
+        android:layout_alignEnd="@+id/pswrdLgthAsyID"
+        android:max="16"
+        />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/seekBarPCAs"
+        android:layout_below="@+id/pswrdCntAsyID"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignRight="@+id/pswrdCntAsyID"
+        android:layout_alignEnd="@+id/pswrdCntAsyID"
+        android:max="9"/>
+
+    <TextView
+        android:text="@string/thread_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button"
+        android:layout_below="@+id/seekBarPLAs"
+        android:onClick="generate"/>
+
+    <TextView
+        android:text="@string/select_pswrd_len"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/seekBarPCThrd"
+        android:layout_alignLeft="@+id/seekBarPCThrd"
+        android:layout_alignStart="@+id/seekBarPCThrd" />
+
+    <TextView
+        android:text="@string/pswrdCntThrdTxtVal"
+        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:id="@+id/pswrdLgthThrdTxtID"
+        android:layout_above="@+id/seekBarPLThrd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <TextView
+        android:text="@string/Asyn_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/seekBarPLThrd"
+        android:layout_alignLeft="@+id/seekBarPLThrd"
+        android:layout_alignStart="@+id/seekBarPLThrd"
+        android:layout_marginTop="11dp" />
+
+</RelativeLayout>

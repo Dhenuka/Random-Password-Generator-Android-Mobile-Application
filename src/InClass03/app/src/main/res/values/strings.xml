@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">InClass03</string>
+    <string name="thread_l">For Thread:</string>
+    <string name="select_paswrd_cnt">Select Password Count:</string>
+    <string name="pswrd_count_val" />
+    <string name="select_pswrd_len">Select Password Length</string>
+    <string name="Asyn_label">For Async Task:</string>
+    <string name="pswrdCntThrdTxtVal" />
+    <string name="pswrdCntAsyncTxtVal" />
+    <string name="pswrdLgthAsyncTxtVal" />
+    <string name="generate">Generate</string>
+</resources>
